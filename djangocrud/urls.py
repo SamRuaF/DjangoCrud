@@ -19,3 +19,4 @@ urlpatterns = [
 
 ]
 
+handler404 = 'tasks.views.handling_404'

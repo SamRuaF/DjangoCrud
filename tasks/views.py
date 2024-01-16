@@ -9,6 +9,7 @@ from .models import Task
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 
+
 # Create your views here.
 
 def home(request):
@@ -141,4 +142,5 @@ def signin(request):
             login(request, user)
             return redirect('tasks')
 
-        
+def handling_404(request,exception):
+    return render(request, '404.html', {})
