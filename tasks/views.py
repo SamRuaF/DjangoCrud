@@ -17,8 +17,6 @@ def home(request):
 
         'form' :  UserCreationForm
     })
-def handler404(request, exception):
-   return render(request, '404.html', status=404)
 
 
 def signup(request):
