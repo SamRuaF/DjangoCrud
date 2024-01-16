@@ -9,48 +9,44 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="/">DjangoApp</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item" >
-                    <a href="/" class="nav-link">home</a>
+                    <a href="/" class="nav-item nav-link active">home</a>
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item" >
-                    <a href="/tasks/" class="nav-link">Tasks</a>
+                    <a href="/tasks/" class="nav-item nav-link">Tasks</a>
                 </li>
                 
                 <li class="nav-item" >
-                    <a href="/tasks/create" class="nav-link">Create task</a>
+                    <a href="/tasks/create" class="nav-item nav-link">Create task</a>
                 </li>
     
                 <li class="nav-item" >
-                    <a href="/tasks/completed" class="nav-link">Task completed</a>
+                    <a href="/tasks/completed" class="nav-item nav-link">Task completed</a>
                 </li>
                
                 
                 <li class="nav-item" >
-                    <a href="/logout/" class="nav-link">LogOut</a>
+                    <a href="/logout/" class="nav-item nav-link disabled text-danger">LogOut</a>
                 </li>
                 {% else %}
-                <li class="nav-item" >
+                <li class="nav-item nav-link" >
                     <a href="/signup" class="nav-link">Signup</a>
                 </li>
-                <li class="nav-item" >
+                <li class="nav-item nav-link" >
                     <a href="/signin" class="nav-link">SignIn</a>
                 </li>
                 {% endif %}ass="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          </div>
           </div>
         </div>
       </nav>
