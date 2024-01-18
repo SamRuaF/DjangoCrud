@@ -5,7 +5,7 @@ from tasks import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('signup/', views.signup, name='Sesion'),
+    path('/signup/', views.signup, name='Sesion'),
     path('tasks/', views.tasks, name='tasks'),
     path('tasks/completed', views.tasks_completed, name='tasks_completed'),
     path('logout/', views.signout, name='logout'),
