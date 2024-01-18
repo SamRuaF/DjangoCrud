@@ -1,4 +1,13 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    {% extends 'base.html' %}
 {% block content %}
 
 <main class="container">
@@ -6,7 +15,7 @@
 <div class="row">
     <div class="col-md-4 offset-md-4 mt-5">
         <form method="POST" class="card card-body">
-            <h1 class="text-center">Inicia sesion</h1>
+            <h1 class="text-center">Crear Cuenta</h1>
         
         {{error}}
         {% csrf_token %}
@@ -31,3 +40,5 @@
 </main>
 
 {% endblock %}
+</body>
+</html>
