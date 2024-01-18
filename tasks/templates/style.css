@@ -1,5 +1,5 @@
 .card {
-    border-radius: 15px; /* Ajusta este valor según tus preferencias */
+    border-radius: 40px; /* Ajusta este valor según tus preferencias */
  }
  input::placeholder {
     font-weight: bold; /* Hace que el texto del placeholder sea bold */
