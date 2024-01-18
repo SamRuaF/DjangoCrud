@@ -1,14 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+<!--{% load static %} es una etiqueta de plantilla de Django que te permite cargar archivos estáticos en tus plantillas. Luego,
+{% static 'style.css' %} genera la URL para tu archivo CSS. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="{% static 'style.css' %}"></head>
 <body>
-    {% extends 'base.html' %}
-{% block content %}
+    {% block content %}  
 
 <main class="container">
     
